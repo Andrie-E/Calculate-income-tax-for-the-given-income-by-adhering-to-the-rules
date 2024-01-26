@@ -6,8 +6,10 @@
 def income_tax(income):
     if income <= 10000:
         tax = 0
-        print(tax)
 # if it is adhere to $20000
+    elif income <= 20000:
+        tax = (income - 10000) * 0.10
+        print(tax)
 # else and return
 # user input code
 user_income = float(input("provide your income: "))
